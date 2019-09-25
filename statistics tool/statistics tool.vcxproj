@@ -151,8 +151,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\vs code\C\others\statistics tool v3.6.c" />
+    <ClCompile Include="Algorithm.cpp" />
     <ClCompile Include="statistics tool.cpp" />
+    <ClCompile Include="Transformation.cpp" />
+    <ClCompile Include="UI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Algorithm.h" />
+    <ClInclude Include="All-Head.h" />
+    <ClInclude Include="System.h" />
+    <ClInclude Include="Transformation.h" />
+    <ClInclude Include="UI.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
