@@ -6,11 +6,11 @@
 
 int main() {
 	double data[100];
-	data[0] = 0;
 	double statistics[4];
 	stringstream ss_temp;
 	UIBegin();
 	do {
+		data[0] = 0;
 		for (int i = 1;;) {
 			input(i);
 			string input;
@@ -54,10 +54,12 @@ int main() {
 				over(data);
 			}
 		} while (1);
-		cout << "算术平均值是：  " <<arithmeticMean(data)<< endl;
-		cout << "算术平均误差是：  " <<arithmeticAverageDeviation(data)<< endl;
-		cout << "标准误差是：  " <<standardError(data)<< endl;
-		cout << "算术平均值的标准偏差:  " <<standardDeviation(data)<< endl;
+		cout << "  " << endl;
+		cout << "算术平均值是：	       " << setiosflags(ios::fixed) << setprecision(4) <<arithmeticMean(data)<< endl;
+		cout << "算术平均误差是：       " <<setiosflags(ios::fixed) << setprecision(4) <<arithmeticAverageDeviation(data)<< endl;
+		cout << "标准误差是：	       " <<setiosflags(ios::fixed) << setprecision(4) <<standardError(data)<< endl;
+		cout << "算术平均值的标准偏差： " <<setiosflags(ios::fixed) << setprecision(4) <<standardDeviation(data)<< endl;
+		cout << "  " << endl;
 		//cout << "" << endl;
 		//cout << "" << endl;
 		//cout << "" << endl;

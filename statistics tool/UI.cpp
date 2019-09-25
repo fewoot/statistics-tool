@@ -11,7 +11,8 @@ void UIBegin() {
 	cout << "请输入所有数据，每个数据之间按下回车" << endl;
 	cout << "如果上一个数据输入错误，请输入“b”或“back”，进行修改" << endl;
 	cout << "如果输入完成，请输入“o”或“over”" << endl;
-	cout << "在最后会显示你输入的所有数据，如有错误请输入对应的序号，否则按下回车开始计算" << endl;
+	cout << "在最后会显示你输入的所有数据，如有错误请输入对应的序号，否则输入“o”开始计算" << endl;
+	cout << "  "<< endl;
 }
 
 void UIOver() {
@@ -27,7 +28,7 @@ void UIOver() {
 void back(int i) {
 	//string temp;
 	cout << "" << endl;
-	cout << "请重置第" <<i<<"个数据:";
+	cout << "请重置第" <<i<<"个数据:"<<endl;
 	//cin >> temp;
 	//return temp;
 	//cout << "" << endl;
@@ -37,7 +38,7 @@ void back(int i) {
 }
 
 void input(int i) {
-	cout << "请输入第" <<i<<"个数据"<< endl;
+	cout << "请输入第" <<i<<"个数据:";
 	//cout << "" << endl;
 	//cout << "" << endl;
 	//cout << "" << endl;
@@ -47,7 +48,7 @@ void input(int i) {
 }
 
 void over(double data[]) {
-	cout << "在计算之前，请您检查数据：" << endl;
+	cout <<endl<< "在计算之前，请您检查数据：" << endl;
 	for (int i=1;i<=data[0];i++) {
 		cout << "第" <<i<<"个数据为："<<data[i]<< endl;
 		//cout << "" << endl;
@@ -82,7 +83,7 @@ void standardFormat() {
 void notInput() {
 	cout << "" << endl;
 	cout << "你还没有输入任何东西呐" << endl;
-	cout << "" << endl;
+	//cout << "" << endl;
 	//cout << "" << endl;
 	//cout << "" << endl;
 
@@ -91,28 +92,28 @@ void notInput() {
 void backError() {
 	cout << "" << endl;
 	cout << "已经没有上一个了哦     _(:з)∠)_" << endl;
-	cout << "" << endl;
+	//cout << "" << endl;
 
 }
 
 void colonFormatError() {
 	cout << "" << endl;
 	cout << "冒号格式错误" << endl;
-	cout << "" << endl;
+	//cout << "" << endl;
 
 }
 
 void formatError() {
 	cout << "" << endl;
 	cout << "格式错误，请输入正确格式的数字" << endl;
-	cout << "" << endl;
+	//cout << "" << endl;
 
 }
 
 void overTheMaxNumber() {
 	cout << "" << endl;
 	cout << "错误，没有这个序号的数字" << endl;
-	cout << "" << endl;
+	/*cout << "" << endl;*/
 
 }
 

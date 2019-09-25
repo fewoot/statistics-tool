@@ -10,7 +10,7 @@ double arithmeticMean(double data[]) {
 	return (sum / data[0]);
 }
 
-//算术平均误差
+//算术平均偏差
 double arithmeticAverageDeviation(double data[]) {
 	double a_a_d = arithmeticMean(data);
 	double temp = 0;
@@ -30,11 +30,11 @@ double standardError(double data[]) {
 		for (int i = 1; i <= data[0]; ++i) {
 			temp += (data[i] - aver_fun) * (data[i] - aver_fun);
 		}
-		return (sqrt(temp / (data[0] - 1)));
+		return (sqrt(temp / (data[0])));
 	}
 }
 
-//算术平均值的标准偏差
+//算术平均值的标准误差
 double standardDeviation(double data[]) {
 	if (data[0] == 1) {
 		return 0;
